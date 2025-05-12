@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              screens: {
+                zero: '0px',
+              }
+            }
+          }
+        }
+      </script>
+      <style type="text/css">
+        .scale1{
+            transform:scaleY(0);
+        }
+            .active{
+                transform:scaleY(1)!important;
+                height: auto!important;
+                opacity: 1!important;
+                padding: 10px 15px;
+                /* display: block!important; */
+            }
+            .rotate1{
+                rotate:-180deg;
+                color: royalblue;
+            }
+      </style>
+</head>
+<body>
+    <!-- navbar -->
+
+    <div class="bg-white inset-x-0">
+        <div class="flex max-w-[1320px] mx-auto py-[10px] zero:flex-row-reverse lg:flex-row justify-center items-center">
+            <div class="image lg:basis-[30%] zero:basis-[80%]">
+                <img src="images/logo.svg" class="lg:w-[200px]  zero:mx-auto lg:ml-[10px] zero:w-[150px]" alt="">
+            </div>
+            <div class="list lg:basis-[70%] zero:basis-[20%]">
+                <ul class="ulist h-full zero:block lg:flex justify-center items-center zero:text-[17px] md:text-[16px] zero:bg-[#f0f2f5] lg:bg-[white] zero:font-semibold zero:fixed lg:static zero:left-[-100%] duration-500 zero:top-[0%] zero:bottom-[0%] zero:w-[90%]">
+                    <li class="text-[28px] lg:hidden px-[20px] py-[10px] bg-[white] closegame">
+                        <i class="fa-solid fa-close"></i>
+                    </li>
+                    <li class="zero:block lg:inline-block">
+                        <a href="" class="zero:p-[20px] md:px-[20px] py-[10px] hover:text-[#ffcb00] zero:block border-b-2 lg:inline-block lg:border-0">Home</a>
+                    </li>
+                    <li class="zero:block lg:inline-block">
+                        <a href="" class="zero:p-[20px] md:px-[20px] py-[10px] hover:text-[#ffcb00] zero:block border-b-2 lg:inline-block lg:border-0">Scholarship Test</a>
+                    </li>
+                    <li class="zero:block lg:inline-block">
+                        <a href="" class="zero:p-[20px] md:px-[20px] py-[10px] hover:text-[#ffcb00] zero:block border-b-2 lg:inline-block lg:border-0">Our Courses</a>
+                    </li>
+                    <li class="zero:block lg:inline-block">
+                        <a href="" class="zero:p-[20px] md:px-[20px] py-[10px] hover:text-[#ffcb00] zero:block border-b-2 lg:inline-block lg:border-0">Results</a>
+                    </li>
+                    <li class="zero:block lg:inline-block">
+                        <a href="" class="zero:p-[20px] md:px-[20px] py-[10px] hover:text-[#ffcb00] zero:block border-b-2 lg:inline-block lg:border-0">Media Coverage</a>
+                    </li>
+                    <li class="zero:block lg:inline-block">
+                        <a href="" class="zero:p-[20px] md:px-[20px] py-[10px] hover:text-[#ffcb00] zero:block border-b-2 lg:inline-block lg:border-0">Blog</a>
+                    </li>
+                    <li class="zero:block lg:inline-block">
+                        <a href="" class="zero:p-[20px] md:px-[20px] py-[10px] hover:text-[#ffcb00] zero:block border-b-2 lg:inline-block lg:border-0">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="text-[28px] lg:hidden text-center">
+                    <i class="fa-solid fa-bars opengame"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- banner -->
+
+    <div class="max-w-full">
+        <img src="images/Desktop-size.webp" class="zero:hidden sm:block" alt="">
+        <img src="images/banner-medium.webp" class="sm:hidden" alt="">
+    </div>
+
+    <!-- row3 -->
+
+    <section class="py-[50px]">
+        <div class="max-w-[1320px] mx-auto grid zero:grid-rows-1 md:grid-cols-[40%_60%] gap-4 px-4">
+            <div>
+                <img src="images/rank.png" class="zero:w-[370px]  mx-auto" alt="">
+            </div>
+            <div class="flex justify-center items-center flex-col p-3">
+                <h2 class="text-[22px] font-semibold text-center mb-4">Best CLAT Coaching in Patna (No 1 CLAT Institute)</h2>
+                <p class="leading-8 text-justify">
+                    Law Prep Tutorial is regarded as one of the best institutes in India for CLAT preparation by the best reviewers and media houses, including the Zee News, Times of India and other Media Houses. Our CLAT preparation institute in Patna is considered the best because of our expert faculty pool, comprehensive and relevant study material, interactive classes, regular assessments and feedback, personalized attention, proven track record of success, and top-ranked students. If you are looking for the best CLAT coaching in Patna, look no further than Law Prep Tutorial.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- row4 -->
+
+    <section class="p-2">
+        <div class="max-w-[1320px] mx-auto">
+            <div class="text-center leading-8">
+                <h1 class="text-[40px] font-semibold">Our Courses</h1>
+                <img src="images/divider.png" class="mx-auto my-[20px]" alt="">
+                <p class="zero:text-[16px] lg:text-[18px]">
+                    
+                Over the year, Law Prep Tutorial has gained astral popularity in achieving success and training students with best possible ways. We have some best CLAT mentors that one has to offer. These mentors are available to students in class and as well as outside the classroom to solve all of their queries.            
+                </p>
+            </div>
+            <div class="grid zero:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-1 gap-4 my-[40px]">
+                <div class="text-center bg-[white] p-[30px] hover:bg-[#ffcb00] duration-1000 shadow-2xl shadow-[0_0px_20px_1px_#ccc]">
+                    <img src="images/b2.webp" class="zero:h-[120px] zero:w-[120px]  sm:h-[156px] sm:w-[156px] rounded-[50%] mx-auto" alt="">
+                    <h3 class="text-[22px] font-semibold">Clat 2025 Review</h3>
+                </div>
+                <div class="text-center bg-[white] p-[30px] hover:bg-[#ffcb00] duration-1000 shadow-2xl shadow-[0_0px_20px_1px_#ccc]">
+                    <img src="images/b2.webp" class="zero:h-[120px] zero:w-[120px]  sm:h-[156px] sm:w-[156px] rounded-[50%] mx-auto" alt="">
+                    <h3 class="text-[22px] font-semibold">Clat 2025 Review</h3>
+                </div>
+                <div class="text-center bg-[white] p-[30px] hover:bg-[#ffcb00] duration-1000 shadow-2xl shadow-[0_0px_20px_1px_#ccc]">
+                    <img src="images/b2.webp" class="zero:h-[120px] zero:w-[120px]  sm:h-[156px] sm:w-[156px] rounded-[50%] mx-auto" alt="">
+                    <h3 class="text-[22px] font-semibold">Clat 2025 Review</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- row5 -->
+
+    <section class="bg-[#ffcb00] py-[50px]  rounded">
+        <div class="max-w-[1320px] mx-auto">
+            <div class="text-center">
+                <h1 class="text-[40px] font-semibold">Why Law Prep Tutorial</h1>
+                <img src="images/divider.png" class="mx-auto" alt="">
+            </div>
+            <div class="grid zero:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-[30px] p-4">
+                <div class="text-center bg-[white] py-[20px]  border-b-8 border-[#cfcfcf] shadow-lg">
+                    <div class="image rounded-[50%] p-[20px] table shadow-[0_0px_10px_1px_#ccc] mx-auto">
+                        <img src="images/2.svg" class="bg-[white] mx-auto" alt="">
+                    </div>
+                    <h2 class="my-[5px] text-[60px] font-[700] text-[red]">22</h2>
+                    <p class="text-[20px] uppercase">Years Of Excellence</p>
+                </div>
+                <div class="text-center bg-[white] py-[20px]  border-b-8 border-[#cfcfcf] shadow-lg">
+                    <div class="image rounded-[50%] p-[20px] table shadow-[0_0px_10px_1px_#ccc] mx-auto">
+                        <img src="images/2.svg" class="bg-[white] mx-auto" alt="">
+                    </div>
+                    <h2 class="my-[5px] text-[60px] font-[700] text-[red]">22</h2>
+                    <p class="text-[20px] uppercase">Years Of Excellence</p>
+                </div>
+                <div class="text-center bg-[white] py-[20px]  border-b-8 border-[#cfcfcf] shadow-lg">
+                    <div class="image rounded-[50%] p-[20px] table shadow-[0_0px_10px_1px_#ccc] mx-auto">
+                        <img src="images/2.svg" class="bg-[white] mx-auto" alt="">
+                    </div>
+                    <h2 class="my-[5px] text-[60px] font-[700] text-[red]">22</h2>
+                    <p class="text-[20px] uppercase">Years Of Excellence</p>
+                </div>
+                <div class="text-center bg-[white] py-[20px]  border-b-8 border-[#cfcfcf] shadow-lg">
+                    <div class="image rounded-[50%] p-[20px] shadow-[0_0px_10px_1px_#ccc] table mx-auto">
+                        <img src="images/2.svg" class="bg-[white] mx-auto" alt="">
+                    </div>
+                    <h2 class="my-[5px] text-[60px] font-[700] text-[red]">22</h2>
+                    <p class="text-[20px] uppercase">Years Of Excellence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- row6 -->
+
+    <section class="bg-[#e9ecf5] py-[50px]">
+        <div class="max-w-[1320px] mx-auto">
+            <div class="text-center">
+                <h1 class="zero:text-[20px] md:text-[35px] font-[500] mb-[10px]">Law Prep Tutorial Clat Coaching in Patna Advantages</h1>
+                <p class="zero:text-[15px] md:text-[25px] font-[600]">Stay ahead with all-round performance in your chosen course</p>
+                <img src="images/divider.png" class="mx-auto" alt="">
+            </div>
+            <div class="grid zero:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] pt-[40px] p-4">
+                <div class="bg-white py-[30px] px-[20px] rounded">
+                    <div class="flex gap-3 items-center mb-3">
+                        <img src="images/t1.webp" width="40px" alt=""/>
+                        <p class="font-[600] text-[18px]">Teaching Methodlogy</p>
+                    </div>
+                    <div>
+                        <ul class="list-disc ms-[25px]">
+                            <li>Concept Application based learning</li>
+                            <li>Interactive engaging lectures</li>
+                            <li>Integrated approach focusing on CLAT other law entrances</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white py-[30px] px-[20px] rounded">
+                    <div class="flex gap-3 items-center mb-3">
+                        <img src="images/t1.webp" width="40px" alt=""/>
+                        <p class="font-[600] text-[18px]">Teaching Methodlogy</p>
+                    </div>
+                    <div>
+                        <ul class="list-disc ms-[25px]">
+                            <li>Concept Application based learning</li>
+                            <li>Interactive engaging lectures</li>
+                            <li>Integrated approach focusing on CLAT other law entrances</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white py-[30px] px-[20px] rounded">
+                    <div class="flex gap-3 items-center mb-3">
+                        <img src="images/t1.webp" width="40px" alt=""/>
+                        <p class="font-[600] text-[18px]">Teaching Methodlogy</p>
+                    </div>
+                    <div>
+                        <ul class="list-disc ms-[25px]">
+                            <li>Concept Application based learning</li>
+                            <li>Interactive engaging lectures</li>
+                            <li>Integrated approach focusing on CLAT other law entrances</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white py-[30px] px-[20px] rounded">
+                    <div class="flex gap-3 items-center mb-3">
+                        <img src="images/t1.webp" width="40px" alt=""/>
+                        <p class="font-[600] text-[18px]">Teaching Methodlogy</p>
+                    </div>
+                    <div>
+                        <ul class="list-disc ms-[25px]">
+                            <li>Concept Application based learning</li>
+                            <li>Interactive engaging lectures</li>
+                            <li>Integrated approach focusing on CLAT other law entrances</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white py-[30px] px-[20px] rounded">
+                    <div class="flex gap-3 items-center mb-3">
+                        <img src="images/t1.webp" width="40px" alt=""/>
+                        <p class="font-[600] text-[18px]">Teaching Methodlogy</p>
+                    </div>
+                    <div>
+                        <ul class="list-disc ms-[25px]">
+                            <li>Concept Application based learning</li>
+                            <li>Interactive engaging lectures</li>
+                            <li>Integrated approach focusing on CLAT other law entrances</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white p-4">
+                    <div class="flex gap-3 items-center mb-3">
+                        <img src="images/t1.webp" width="40px" alt=""/>
+                        <p class="font-[600] text-[18px]">Teaching Methodlogy</p>
+                    </div>
+                    <div>
+                        <ul class="list-disc ms-[25px]">
+                            <li>Concept Application based learning</li>
+                            <li>Interactive engaging lectures</li>
+                            <li>Integrated approach focusing on CLAT other law entrances</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- row7 -->
+
+    <section class="py-[30px]">
+        <div class="max-w-[1320px] mx-auto px-[10px]">
+            <div class="text-center mb-[20px]">
+                <h3 class="zero:text-[25px] md:text-[45px] font-semibold mb-[10px]">A Student's Journey</h3>
+                <img src="images/divider.png" class="mx-auto" alt="">
+            </div>
+            <div class="main grid grid-cols-5 text-center zero:max-w-[400px] md:max-w-[760px] lg:max-w-[900px] mx-auto">
+                <div>
+                    <div class="zero:h-[62px] zero:max-w-[62px]  zero:border-[4px] md:h-[152px] md:max-w-[152px] rounded-[50%] md:border-[10px] border-[#343362] flex justify-center items-center mx-auto">
+                        <div class="zero:h-[42px] zero:min-w-[42px] md:h-[120px] md:min-w-[120px] bg-[#8288c2] rounded-[50%] flex items-center justify-center">
+                            <img src="images/j1.png" class="zero:max-w-[25px] md:max-w-[50px]" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/o1.png" class="mx-auto zero:max-w-[60%] md:max-w-[100%]" alt="">
+                    </div>
+                    <div class="zero:text-[11px] md:text-[16px]">
+                        Learn Through Extensive & In Depth Classroom Sessions
+                    </div>
+                </div>
+                <div>
+                    <div class="zero:h-[62px] zero:max-w-[62px]  zero:border-[4px] md:h-[152px] md:max-w-[152px] rounded-[50%] md:border-[10px] border-[#343362] flex justify-center items-center mx-auto">
+                        <div class="zero:h-[42px] zero:min-w-[42px] md:h-[120px] md:min-w-[120px] bg-[#8288c2] rounded-[50%] flex items-center justify-center">
+                            <img src="images/j1.png" class="zero:max-w-[25px] md:max-w-[50px]" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/o2.png" class="mx-auto zero:max-w-[60%] md:max-w-[100%]" alt="">
+                    </div>
+                    <div class="zero:text-[11px] md:text-[16px]">
+                        Learn Through Extensive & In Depth Classroom Sessions
+                    </div>
+                </div>
+                <div>
+                    <div class="zero:h-[62px] zero:max-w-[62px]  zero:border-[4px] md:h-[152px] md:max-w-[152px] rounded-[50%] md:border-[10px] border-[#343362] flex justify-center items-center mx-auto">
+                        <div class="zero:h-[42px] zero:min-w-[42px] md:h-[120px] md:min-w-[120px] bg-[#8288c2] rounded-[50%] flex items-center justify-center">
+                            <img src="images/j1.png" class="zero:max-w-[25px] md:max-w-[50px]" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/o1.png" class="mx-auto zero:max-w-[60%] md:max-w-[100%]" alt="">
+                    </div>
+                    <div class="zero:text-[11px] md:text-[16px]">
+                        Learn Through Extensive & In Depth Classroom Sessions
+                    </div>
+                </div>
+                <div>
+                    <div class="zero:h-[62px] zero:max-w-[62px]  zero:border-[4px] md:h-[152px] md:max-w-[152px] rounded-[50%] md:border-[10px] border-[#343362] flex justify-center items-center mx-auto">
+                        <div class="zero:h-[42px] zero:min-w-[42px] md:h-[120px] md:min-w-[120px] bg-[#8288c2] rounded-[50%] flex items-center justify-center">
+                            <img src="images/j1.png" class="zero:max-w-[25px] md:max-w-[50px]" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/o2.png" class="mx-auto zero:max-w-[60%] md:max-w-[100%]" alt="">
+                    </div>
+                    <div class="zero:text-[11px] md:text-[16px]">
+                        Learn Through Extensive & In Depth Classroom Sessions
+                    </div>
+                </div>
+                <div>
+                    <div class="zero:h-[62px] zero:max-w-[62px]  zero:border-[4px] md:h-[152px] md:max-w-[152px] rounded-[50%] md:border-[10px] border-[#343362] flex justify-center items-center mx-auto">
+                        <div class="zero:h-[42px] zero:min-w-[42px] md:h-[120px] md:min-w-[120px] bg-[#8288c2] rounded-[50%] flex items-center justify-center">
+                            <img src="images/j1.png" class="zero:max-w-[25px] md:max-w-[50px]" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/o1.png" class="mx-auto zero:max-w-[60%] md:max-w-[100%]" alt="">
+                    </div>
+                    <div class="zero:text-[11px] md:text-[16px]">
+                        Learn Through Extensive & In Depth Classroom Sessions
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- row8 -->
+
+    <section class="py-[30px] bg-[#ffcb00]">
+        <div class="max-w-[1320px] mx-auto">
+            <div class="text-center">
+                <h3 class="zero:text-[25px] md:text-[35px] font-semibold mb-[10px]">Student Testimonial</h3>
+                <img src="images/divider.png" class="mx-auto" alt="">
+            </div>
+            <div class="grid zero:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] pt-[40px] p-2">
+                <div class="py-3 px-1 text-center bg-white rounded">
+                    <img src="images/YT.jpg" alt="">
+                    <h2 class="zero:text-[16px] sm:text-[20px] font-[600] mt-[5px]">HARSHIT GUPTA CLAT 2024, AIR 2</h2>
+                </div>
+                <div class="py-3 px-1 text-center bg-white rounded">
+                    <img src="images/YT.jpg" alt="">
+                    <h2 class="zero:text-[16px] sm:text-[20px] font-[600] mt-[5px]">HARSHIT GUPTA CLAT 2024, AIR 2</h2>
+                </div>
+                <div class="py-3 px-1 text-center bg-white rounded">
+                    <img src="images/YT.jpg" alt="">
+                    <h2 class="zero:text-[16px] sm:text-[20px] font-[600] mt-[5px]">HARSHIT GUPTA CLAT 2024, AIR 2</h2>
+                </div>
+                <div class="py-3 px-1 text-center bg-white rounded">
+                    <img src="images/YT.jpg" alt="">
+                    <h2 class="zero:text-[16px] sm:text-[20px] font-[600] mt-[5px]">HARSHIT GUPTA CLAT 2024, AIR 2</h2>
+                </div>
+                <div class="py-3 px-1 text-center bg-white rounded">
+                    <img src="images/YT.jpg" alt="">
+                    <h2 class="text-[20px] font-[600] mt-[5px]">HARSHIT GUPTA CLAT 2024, AIR 2</h2>
+                </div>
+                <div class="py-3 px-1 text-center bg-white rounded">
+                    <img src="images/YT.jpg" alt="">
+                    <h2 class="text-[20px] font-[600] mt-[5px]">HARSHIT GUPTA CLAT 2024, AIR 2</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- row9 -->
+
+    <section class="mt-[50px] mb-[30px] p-2">
+        <div class="border-y-8 border-[#ffcb00] max-w-[1320px] mx-auto  py-[40px]">
+            <div class="text-center">
+                <h1 class="zero:text-[25px] md:text-[35px] font-semibold mb-[10px]">Clear All Your Doubts by best facility</h1>
+                <img src="images/divider.png" class="mx-auto" alt="">
+            </div>
+            <div class="grid zero:grid-cols-1 lg:grid-cols-[60%_40%] p-2">
+                <form>
+                    <div class="grid zero:grid-cols-1 sm:grid-cols-2 md:grid-cols-2  gap-2">
+                        <div>
+                            <label class="block font-[600]">Name</label>
+                            <input type="text" class="mt-[5px] py-[10px] px-[15px] border-2 rounded w-full" placeholder="Enter Name Here"/>
+                        </div>
+                        <div>
+                            <label class="block font-[600]">Name</label>
+                            <input type="text" class="mt-[5px] py-[10px] px-[15px] border-2 rounded w-full" placeholder="Enter Name Here"/>
+                        </div>
+                    </div>
+                    <div class="grid zero:grid-cols-1 sm:grid-cols-2 md:grid-cols-2  gap-2">
+                        <div>
+                            <label class="block font-[600]">Name</label>
+                            <input type="text" class="mt-[5px] py-[10px] px-[15px] border-2 rounded w-full" placeholder="Enter Name Here"/>
+                        </div>
+                        <div>
+                            <label class="block font-[600]">Name</label>
+                            <input type="text" class="mt-[5px] py-[10px] px-[15px] border-2 rounded w-full" placeholder="Enter Name Here"/>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="font-[600] mb-[5px]">Message</label>
+                        <textarea class="border-2 w-full p-2" rows="5" placeholder="Enter Message"></textarea>
+                    </div>
+                    <div class="grid zero:grid-cols-1 sm:grid-cols-2 md:grid-cols-2  gap-2">
+                        <div>
+                            <label class="block font-[600] opacity-0">Name</label>
+                            <input type="text" class="mt-[5px] py-[10px] px-[15px] border-2 rounded w-full bg-[url('../images/captcha.jpeg')] bg-no-repeat bg-cover bg-center"/>
+                        </div>
+                        <div>
+                            <label class="block font-[600]">Enter Captcha *</label>
+                            <input type="text" class="mt-[5px] py-[10px] px-[15px] border-2 rounded w-full" placeholder="Enter Name Here"/>
+                        </div>
+                    </div>
+                    <div  class="w-full my-[10px]">
+                        <input type="checkbox" class=" mr-[5px]"> I agree to recieve information from Law Prep Tutorial
+                    </div>
+                </form>
+                <div class="zero:hidden md:block">
+                    <img src="images/contactus.png" class="mx-auto" alt="">
+                </div>
+                <button type="submit" class="p-[10px] bg-[#ffcb00] text-[25px] font-[600] rounded">Submit</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- row10 -->
+
+    <section class="">
+        <div class="max-w-[1120px] mx-auto zero:py-[15px] md:py-[40px]">
+            <div class="text-center">
+                <h1 class="zero:text-[25px] md:text-[35px] font-semibold mb-[10px]">Frequently Asked Questions</h1>
+                <img src="images/divider.png" class="mx-auto" alt="">
+            </div>
+            <div class="py-[40px] px-[10px]">
+                <div class="mb-[20px]">
+                    <div class="flex justify-between heading items-center p-[15px] border-2">
+                        <h2 class="basis-[90%] ">Which is the Institute for the CLAT Patna 2024?</h2>
+                        <i class="bais-[10%] fa-solid fa-chevron-down duration-500 text-[20px]"></i>
+                    </div>
+                    <!-- <div class="border-2 scale-y-0 h-[0px]  origin-top duration-1000  para"> -->
+                        <!-- <div class="p-[10px_15px]"> -->
+                            <p class="border-2 scale1 h-[0px]  origin-top duration-1000 opacity-0">
+                                Law Prep known as the best CLAT coaching in Patna, we have produced toppers every year. We have experienced faculty, the best study material, the best and preferred Mock tests by students, an user friendly LMS portal, and much more which make us the preferred destination for students preparing for CLAT.
+                            </p>
+                        <!-- </div> -->
+                    <!-- </div> -->
+                </div>
+
+                <div class="mb-[20px]">
+                    <div class="flex justify-between heading items-center p-[15px] border-2">
+                        <h2 class="basis-[90%] ">Which is the Institute for the CLAT Patna 2024?</h2>
+                        <i class="bais-[10%] fa-solid fa-chevron-down duration-500 text-[20px]"></i>
+                    </div>
+                    <!-- <div class="border-2 scale-y-0 h-[0px]  origin-top duration-1000 "> -->
+                        <!-- <div class="p-[10px_15px]"> -->
+                            <p class="border-2 scale1 h-[0px] origin-top duration-1000 opacity-0">
+                                Law Prep known as the best CLAT coaching in Patna, we have produced toppers every year. We have experienced faculty, the best study material, the best and preferred Mock tests by students, an user friendly LMS portal, and much more which make us the preferred destination for students preparing for CLAT.
+                            </p>
+                        <!-- </div> -->
+                    <!-- </div> -->
+                </div>
+
+                <div class="mb-[20px]">
+                    <div class="flex justify-between heading items-center p-[15px] border-2">
+                        <h2 class="basis-[90%] ">Which is the Institute for the CLAT Patna 2024?</h2>
+                        <i class="bais-[10%] fa-solid fa-chevron-down duration-500 text-[20px]"></i>
+                    </div>
+                    <!-- <div class="border-2 scale-y-0 h-[0px]  origin-top duration-1000 "> -->
+                        <!-- <div class="p-[10px_15px]"> -->
+                            <p class="border-2 scale1 h-[0px]  origin-top duration-1000  opacity-0"> 
+                                Law Prep known as the best CLAT coaching in Patna, we have produced toppers every year. We have experienced faculty, the best study material, the best and preferred Mock tests by students, an user friendly LMS portal, and much more which make us the preferred destination for students preparing for CLAT.
+                            </p>
+                        <!-- </div> -->
+                    <!-- </div>     -->
+                </div>
+
+                <div class="mb-[20px]">
+                    <div class="flex justify-between heading items-center p-[15px] border-2">
+                        <h2 class="basis-[90%] ">Which is the Institute for the CLAT Patna 2024?</h2>
+                        <i class="bais-[10%] fa-solid fa-chevron-down duration-500 text-[20px]"></i>
+                    </div>
+                    <!-- <div class="border-2 scale-y-0 h-[0px]  origin-top duration-1000 "> -->
+                        <!-- <div class="p-[10px_15px]"> -->
+                            <p class="border-2 scale1 h-[0px]  origin-top duration-1000 opacity-0 "> 
+                                Law Prep known as the best CLAT coaching in Patna, we have produced toppers every year. We have experienced faculty, the best study material, the best and preferred Mock tests by students, an user friendly LMS portal, and much more which make us the preferred destination for students preparing for CLAT.
+                            </p>
+                        <!-- </div> -->
+                    <!-- </div>        -->
+                </div>
+
+                <div class="mb-[20px]">
+                    <div class="flex justify-between heading items-center p-[15px] border-2">
+                        <h2 class="basis-[90%] ">Which is the Institute for the CLAT Patna 2024?</h2>
+                        <i class="bais-[10%] fa-solid fa-chevron-down duration-500 text-[20px]"></i>
+                    </div>
+                    <!-- <div class="border-2 scale-y-0 h-[0px]  origin-top duration-1000 "> -->
+                        <!-- <div class="p-[10px_15px]"> -->
+                            <p class="border-2 scale1 h-[0px]  origin-top duration-1000 opacity-0">
+                                Law Prep known as the best CLAT coaching in Patna, we have produced toppers every year. We have experienced faculty, the best study material, the best and preferred Mock tests by students, an user friendly LMS portal, and much more which make us the preferred destination for students preparing for CLAT.
+                            </p>
+                        <!-- </div> -->
+                    <!-- </div> -->
+                    
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- row11 -->
+
+    <section class="bg-[gray]">
+        <div class="max-w-[1320px] mx-auto py-[30px]">
+            <div class="mb-[20px]">
+                <img src="images/logo.svg" class="m-[10px_auto] sm:w-[250px] zero:w-[150px] bg-white p-2"/>
+            </div>
+            <div class="grid zero:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 zero:pl-[10px] sm:pl-[40px]">
+                <div>
+                    <ul class="text-[white] leading-8">
+                        <li class="text-[white] zero:text-[20px] sm:text-[26px] font-semibold mb-[10px]">Contact Us</li>
+                        <li class="flex items-center gap-2"><img src="images/arrow.svg" alt="">Clat 2025</li>
+                        <li class="flex items-center gap-2"><img src="images/arrow.svg" alt="">About Us</li>
+                        <li class="flex items-center gap-2"><img src="images/arrow.svg" alt="">What is Clat</li>
+                        <li class="flex items-center gap-2"><img src="images/arrow.svg" alt="">Why give CLAT?</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="text-[white] leading-8">
+                        <li class="text-[white] zero:text-[20px] sm:text-[26px] font-semibold mb-[10px]">Contact Us</li>
+                        <li class="flex items-center gap-2"><img src="images/arrow.svg" alt="">Clat 2025</li>
+                        <li class="flex items-center gap-2"><img src="images/arrow.svg" alt="">About Us</li>
+                        <li class="flex items-center gap-2"><img src="images/arrow.svg" alt="">What is Clat</li>
+                        <li class="flex items-center gap-2"><img src="images/arrow.svg" alt="">Why give CLAT?</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="text-[white] leading-8">
+                        <li class="text-[white] zero:text-[20px] sm:text-[26px] font-semibold mb-[10px]">Contact Us</li>
+                        <li class="flex items-center gap-2"><img src="images/arrow.svg" alt="">Clat 2025</li>
+                        <li class="flex items-center gap-2"><img src="images/arrow.svg" alt="">About Us</li>
+                        <li class="flex items-center gap-2"><img src="images/arrow.svg" alt="">What is Clat</li>
+                        <li class="flex items-center gap-2"><img src="images/arrow.svg" alt="">Why give CLAT?</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <section class="bg-[#3b3c3e]">
+        <div class="max-w-[1320px] mx-auto">
+            <div class="flex justify-between p-[15px_20px] items-center zero:flex-col sm:flex-row gap-2">
+                <h2 class="text-[white] zero:text-center lg:text-left font-semibold zero:text-[15px] sm:text-[18px]">Copyright © 2022 <span class="text-[#ffcb00]">Nand Laxmi Enterprises</span> All Right Reserved</h2>
+                <div class="flex gap-2">
+                    <i class="fa-brands fa-instagram h-[30px] w-[30px] flex justify-center items-center bg-white rounded-[50%]"></i>
+                    <i class="fa-brands fa-twitter h-[30px] w-[30px] flex justify-center items-center bg-white rounded-[50%]"></i>
+                    <i class="fa-brands fa-facebook-f h-[30px] w-[30px] flex justify-center items-center bg-white rounded-[50%]"></i>
+                    <i class="fa-brands fa-linkedin-in h-[30px] w-[30px] flex justify-center items-center bg-white rounded-[50%]"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="custom.js"></script>
+</html>
